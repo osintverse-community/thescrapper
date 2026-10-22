@@ -28,7 +28,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/thescrapper@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/thescrapper@sha256:4e40b8e539fb71d87be5e6f35eea15088f462b70cdac1390fe1767ae5c988c0a
   platforms: [linux/amd64, linux/arm64]
   command: ["python", "/opt/tool/TheScrapper.py", "--url", "{url}", "--banner", "--crawl", "{crawl}"]
   output_format: text
